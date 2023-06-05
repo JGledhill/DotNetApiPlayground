@@ -1,0 +1,15 @@
+﻿1. Create a Get by Id request in the Book Controller.
+2. Create Post and Put requests in the Book Controller.
+3. Create a Delete request in the Book Controller.
+
+4. Create a wrapper around the Api responses, to ensure that the response for each endpoint is always in the same format.
+   There are a few ways to do this, you could try using middleware like the top answer here:
+   https://stackoverflow.com/questions/40748900/how-can-i-wrap-web-api-responsesin-net-core-for-consistency
+   Middleware docs: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-7.0
+
+5. Start using a Database rather than a static class to store data.  
+   I recommend Entity Framework Core:
+   https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
+
+6. Create the Model, Controller and repo for an Author object.  
+   Set it up with a Foreign Key to the Books and Create a migration to the database.
