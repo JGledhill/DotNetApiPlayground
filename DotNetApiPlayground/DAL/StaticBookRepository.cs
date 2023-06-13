@@ -5,6 +5,7 @@ namespace DotNetApiPlayground.DAL
 {
     /* This is a repository class.
      * It is responsible for interacting with the database.
+     * This class inherits from IRepository<Book> and must implement all of its methods: Add, Delete, etc.
      * https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design
      */
     public class StaticBookRepository : IRepository<Book>
